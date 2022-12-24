@@ -125,7 +125,7 @@ local function GetURL(scripturl)
 	if shared.VapeDeveloper then
 		return readfile("vape/"..scripturl)
 	else
-		return game:HttpGet("https://raw.githubusercontent.com/7GrandDadPGN/VapeV4ForRoblox/main/"..scripturl, true)
+		return game:HttpGet("https://raw.githubusercontent.com/hackermanyacapin/VapeV4ForRoblox/main/"..scripturl, true)
 	end
 end
 local entity = shared.vapeentity
@@ -291,7 +291,7 @@ local function getcustomassetfunc(path)
 			textlabel:Remove()
 		end)
 		local req = requestfunc({
-			Url = "https://raw.githubusercontent.com/7GrandDadPGN/VapeV4ForRoblox/main/"..path:gsub("vape/assets", "assets"),
+			Url = "https://raw.githubusercontent.com/hackermanyacapin/VapeV4ForRoblox/main/"..path:gsub("vape/assets", "assets"),
 			Method = "GET"
 		})
 		writefile(path, req.Body)
@@ -10967,7 +10967,7 @@ runcode(function()
 end)
 
 task.spawn(function()
-	local url = "https://raw.githubusercontent.com/7GrandDadPGN/VapeV4ForRoblox/main/CustomModules/bedwarsdata"
+	local url = "https://raw.githubusercontent.com/hackermanyacapin/VapeV4ForRoblox/main/CustomModules/bedwarsdata"
 
 	local function createannouncement(announcetab)
 		local notifyframereal = Instance.new("TextButton")
